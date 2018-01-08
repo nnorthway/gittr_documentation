@@ -53,4 +53,5 @@ section img {
   position: relative;
   top: 4px;
   z-index: -1;
+  font-size: 1.2em;
 }
