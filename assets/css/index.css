@@ -1,0 +1,56 @@
+header,
+main,
+footer {
+  padding-left: 300px;
+}
+
+.sidenav-trigger {
+  display: none;
+}
+
+header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+}
+
+main {
+  padding-top: 50px;
+}
+
+section {
+  min-height: 100vh;
+  border-bottom: 5px solid #e0e0e0;
+}
+
+section img {
+  max-width: 100%;
+}
+
+.section-header:hover {
+  cursor: pointer;
+}
+
+#section-title {
+  margin: 0;
+  display: block;
+  padding: .5em 0;
+}
+
+@media (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+  .sidenav-trigger {
+    display: block;
+  }
+}
+
+.material-icons.inline {
+  position: relative;
+  top: 4px;
+  z-index: -1;
+}

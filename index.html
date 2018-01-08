@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Gittr Documentation</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='assets/materialize/css/materialize.min.css' rel='stylesheet' type='text/css' />
+    <link href='assets/css/index.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <ul id='slide-out' class='sidenav sidenav-fixed'>
+      <li>
+        <div class='user-view'>
+          <img src='assets/images/logo.png' width='80px' height='80px'/>
+          <p class='flow-text'>
+            Gittr Documentation
+          </p>
+          <form id='search'>
+            <div class='row'>
+              <div class='input-field col s12 m8'>
+                <input type='text' name='search_field' id='search_field' />
+                <label for='search_field'>Search</label>
+              </div>
+              <div class='col s12 m4'>
+                <button class='btn'><i class='material-icons'>search</i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      <li>
+        <a href='#getting_started'>Getting Started</a>
+      </li>
+      <li>
+        <a href='#overview'>Application Overview</a>
+      </li>
+      <li class='no-padding'>
+        <ul class='collapsible collapsible-accordion'>
+          <li>
+            <a class='collapsible-header'>Administrator <i class='material-icons right'>arrow_drop_down</i></a>
+            <div class='collapsible-body'>
+              <ul>
+                <li>
+                  <a href='#ad_admin_role'>The Administrator's Role</a>
+                </li>
+                <li>
+                  <a href='#ad_admin_dashboard'>Overview</a>
+                </li>
+                <li>
+                  <a href='#ad_dashboard'>The Dashboard</a>
+                </li>
+                <li>
+                  <a href='#ad_order_status'>Order Status</a>
+                </li>
+                <li>
+                  <a href='#ad_merchants'>Merchants</a>
+                </li>
+                <li>
+                  <a href='#ad_app_settings'>App Settings</a>
+                </li>
+                <li>
+                  <a href='#ad_payment_settings'>Payment Settings</a>
+                </li>
+                <li>
+                  <a href='#ad_company_settings'>Company Settings</a>
+                </li>
+                <li>
+                  <a href='#ad_reports'>Reports</a>
+                </li>
+                <li>
+                  <a href='#ad_database'>Database</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class='no-padding'>
+        <ul class='collapsible collapsible-accordion'>
+          <li>
+            <a class='collapsible-header'>Merchant <i class='material-icons right'>arrow_drop_down</i></a>
+            <div class='collapsible-body'>
+              <ul>
+                <li>
+                  <a href='#md_merchant_role'>The Merchant's Role</a>
+                </li>
+                <li>
+                  <a href='#md_merchant_dashboard'>Overview</a>
+                </li>
+                <li>
+                  <a href='#md_dashboard'>The Dashboard</a>
+                </li>
+                <li>
+                  <a href='#md_order_status'>Order Status</a>
+                </li>
+                <li>
+                  <a href='#md_menu'>Menus</a>
+                </li>
+                <li>
+                  <a href='#md_menu_categories'>Categories</a>
+                </li>
+                <li>
+                  <a href='#md_items'>Items</a>
+                </li>
+                <li>
+                  <a href='#md_subcategories'>Subcategories</a>
+                </li>
+                <li>
+                  <a href='#md_subitems'>Subitems</a>
+                </li>
+                <li>
+                  <a href='#md_reports'>Reports</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class='no-padding'>
+        <ul class='collapsible collapsible-accordion'>
+          <li>
+            <a class='collapsible-header'>User <i class='material-icons right'>arrow_drop_down</i></a>
+            <div class='collapsible-body'>
+              <ul>
+                <li>
+                  <a href='#user_dashboard'>User Dashboard Overview</a>
+                </li>
+                <li>
+                  <a href='#ud_profile'>Profile Settings</a>
+                </li>
+                <li>
+                  <a href='#ud_address_book'>Address Book</a>
+                </li>
+                <li>
+                  <a href='#ud_order_history'>Order History</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href='#help'>More Help</a>
+      </li>
+    </ul>
+    <header class='row grey lighten-2'>
+      <div class='col s1'>
+        <a href="#" data-target="slide-out" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+      </div>
+      <div class='col s11'>
+        <p class='flow-text' id='section-title'></p>
+      </div>
+    </header>
+    <main id='content'>
+      <div class='container'>
+        <section id='getting_started' data-title="Getting Started">
+          <h3 class='section-header'>Getting Started</h3>
+          <p class='flow-text'>
+            Gittr is a web app that enables local-level couriers to facilitate
+            online ordering for their partnered restaurants. Gittr helps courier
+            companies manage business-to-business relationships and last mile
+            delivery services with partners. Gittr provides a web interface for
+            end users to order and pay online, dispatching the order to the
+            courier company and the product provider simultaneously. The courier
+            company then picks up the order from the partnered business and
+            delivers it.
+          </p>
+          <p>
+            If you already have a Gittr account, that's great, and you can skip to
+            <a href='#setting_up'>Setting Up Your Account</a>,
+            but if you  don't have a Gittr account yet, continue reading.
+          </p>
+          <hr />
+          <h4>Signing Up For An Account</h4>
+          <p>
+            To sign up for an account,
+            <a href='https://gittr.co/#contact' target='_blank'>follow this link</a>
+            to our signup form. We'll set up your instance of Gittr, prepare your
+            database, and let you know when your installation is ready to use.
+            We'll send you log in information and your URL to log in to the
+            administration dashboard.
+          </p>
+          <hr />
+          <h4>Logging In</h4>
+          <p>
+            To log in to your administration dashboard, go to
+            <code>https://gittr.co/your-company-name/admin/login</code>.
+            There, you'll enter your login credentials and be redirected to the
+            dashboard.
+          </p>
+        </section>
+
+        <section id='overview' data-title='An Overview of Gittr'>
+          <h4 class='section-header'>An Overview of Gittr</h4>
+          <p class='flow-text'>
+            Gittr presents a way for local level courier companies (represented
+            by Admin Users) to enable online ordering for their partnered merchants
+            (represented by Merchant Users). Gittr accepts and processes
+            payment from the customer (represented by End Users), takes out an
+            application fee, and deposits the money in company's account. The
+            merchant and company are notified about the order and the merchant
+            prepares the order for pickup by the company. The company then completes
+            delivery.<br />
+          </p>
+          <hr />
+
+        </section>
+
+        <section id='setting_up' data-title="Setting Up Your Account">
+          <h4 class='section-header'>Setting Up Your Account</h4>
+          <p>
+
+          </p>
+        </section>
+
+        <section id='ad_admin_role' data-title='The Role of the Administrator'>
+          <h4 class='section-header'>The Role of the Administrator</h4>
+          <p>
+
+          </p>
+        </section>
+
+        <section id='ad_admin_dashboard' data-title='Admin Dashboard'>
+          <h3 class='section-header'>Admin Dashboard</h3>
+          <p class='flow-text'>
+            The administration dashboard (referred to as Admin Dashboard) is
+            where all of the settings of your company are changed, where new
+            merchants can be added, and where some control of incoming orders is
+            placed. Here is a snapshot of the dashboard:
+          </p>
+          <img src='assets/images/admin_dashboard.png' />
+          <hr />
+          <h4>Menu Items</h4>
+          <ul class='browser-default'>
+            <li>
+              <strong>View Website</strong>: See your website
+            </li>
+            <li>
+              <strong>Dashboard</strong>: The front page of the admin dashboard
+            </li>
+            <li>
+              <strong>Order Status</strong>: View all orders
+            </li>
+            <li>
+              <strong>Merchants</strong>: Drop Down List
+              <ul class='browser-default'>
+                <li>
+                  <strong>Commission</strong>: View Merchant Commission
+                </li>
+                <li>
+                  <strong>List</strong>: View and access all merchants and administrative merchant settings
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>App Settings</strong>: Drop-down list
+              <ul class='browser-default'>
+                <li>
+                  <strong>General Settings</strong>: View and change basic information about your company
+                </li>
+                <li>
+                  <strong>Manage Currency</strong>: Manage Currency Settings
+                </li>
+                <li>
+                  <strong>User List</strong>: View and edit other administration and merchant user profiles
+                </li>
+                <li>
+                  <strong>SEO/Social</strong>: View and change SEO and social media settings
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Payment Settings</strong>: Drop-down list
+              <ul class='browser-default'>
+                <li>
+                  <strong>Billing Settings</strong>: Add your credit card to enable automatic billing
+                </li>
+                <li>
+                  <strong>Stripe Settings</strong>: Connect your Stripe account to receive payments
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Company Settings</strong>: Drop-down List
+              <ul class='browser-default'>
+                <li>
+                  <strong>Analytics</strong>: View and change your Google Analytics Script code
+                </li>
+                <li>
+                  <strong>Customer List</strong>: A list of your customers
+                </li>
+                <li>
+                  <strong>Zones</strong>: View and edit your service areas
+                </li>
+                <li>
+                  <strong>Options</strong>: View and edit your company's description and other options
+                </li>
+                <li>
+                  <strong>Privacy Policy</strong>: View and edit your company's privacy policy
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Reports</strong>: Drop-down list
+              <ul class='browser-default'>
+                <li>
+                  <strong>Sales Report</strong>: See a day's sales report
+                </li>
+                <li>
+                  <strong>Sales Summary Report</strong>: See your cumulative sales report
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>User Settings</strong>: View and change your user profile's settings
+            </li>
+            <li>
+              <strong>Log Out</strong>: Log out of the administration dashboard
+            </li>
+          </ul>
+        </section>
+
+        <section id='ad_dashboard' data-title='Admin Dashboard: The Dashboard'>
+          <h4 class='section-header'>The Dashboard</h4>
+          <p class='flow-text'>
+            The Dashboard holds a snapshot of what's currently going on with
+            your company. There are two collapsible items - Active Orders and
+            Today's Sales. Clicking the "Active Orders" dropdown will show you a
+            list of currently active orders with the option to view them.
+            Clicking the "Today's Sales" dropdown will give you an overview of
+            the day's activity in real numbers, including an order count,
+            generated revenue, payouts, and profits.
+          </p>
+        </section>
+
+        <section id='ad_order_status' data-title='Admin Dashboard: Order Status'>
+          <h4 class='section-header'>Order Status</h4>
+          <p class='flow-text'>
+            All of your company's orders will appear on this screen, separated
+            into four categories:<br />
+            <strong>New, Active, Completed,</strong> and <strong>Refunded</strong>.
+          </p>
+          <hr />
+          <p>
+            <strong>New</strong> orders are orders that have been received, paid
+            for, and dispatched to TwinJet but have not yet accepted by the
+            merchant or your company. Accepting the order by clicking "Accept"
+            under "actions" will move the order to the "active" category. Orders
+            can be accepted by merchants or company administrators. Declining
+            the order by clicking "Decline" under "actions" will move the order
+            to the "refunded" category and the order will be refunded to the
+            customer.<br />
+            When an order is received, three emails are sent out: one to your
+            company, one to the merchant to make them aware, and one to the
+            customer as a receipt. The merchant has the option from their email
+            alert to accept or decline the order. Once the merchant has accepted
+            or declined an order, there is nothing you need to do further (except
+            complete the delivery, of course!).
+          </p>
+          <p>
+            <strong>Active</strong> orders are orders that have been received,
+            paid for, dispatched to TwinJet, and accepted by the merchant or
+            company. Orders in this category are somewhere between getting
+            dispatched and getting to the customer.
+          </p>
+          <p>
+            <strong>Completed</strong> orders are orders that have been delivered
+            to the customer.
+          </p>
+          <p>
+            <strong>Refunded</strong> orders have been declined or refunded to
+            the customer. These orders will still be available for reference.
+          </p>
+        </section>
+
+        <section id='ad_merchants' data-title='Admin Dashboard: Merchants'>
+          <h4 class='section-header'>Merchants</h4>
+          <hr />
+          <h5>Commission</h5>
+          <p>
+            Merchant commission is calculated and shown here.
+          </p>
+          <hr />
+          <h5>List</h5>
+          <p>
+            A list of all of your company's merchants and light details with
+            options to edit their privileged settings and log in to their
+            merchant dashboard.
+          </p>
+          <hr />
+          <h5>Log In</h5>
+          <p>
+            Log in to the <a href='#md_merchant_dashboard'>merchant dashboard</a>.
+          </p>
+          <hr />
+          <h5>Edit</h5>
+          <p>
+            Clicking "edit" on a merchant in the merchant list presents the user
+            with various options:
+          </p>
+          <ol>
+            <li>
+              <strong>Name</strong>: The merchant's name
+            </li>
+            <li>
+              <strong>Email</strong>: The merchant's email address for notifications
+            </li>
+            <li>
+              <strong>Phone</strong>: The merchant's main, public telephone number
+            </li>
+            <li>
+              <strong>Description</strong>: A description of the merchant
+            </li>
+            <li>
+              <strong>Status</strong>: The merchant's current status
+              <ul class='browser-default'>
+                <li>
+                  <strong>Active</strong>: The merchant is active, has at least
+                  one menu built, all options set and is accepting orders
+                </li>
+                <li>
+                  <strong>Unpublished</strong>: The merchant has at least one
+                  menu built and all options set, but is not accepting orders
+                </li>
+                <li>
+                  <strong>Inactive</strong>: The merchant either doesn't have
+                  any menus built, and/or doesn't have all their options set and can not accept orders.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Commission</strong>: Change how a merchant is paid or
+              pays your company
+              <ul class='browser-default'>
+                <li>
+                  <strong>Flat Fee</strong>: check this box if this merchant
+                  pays a flat fee per delivery
+                  <br />
+                  <small>If flat fee is checked, you must fill out the "amount"
+                    field immediately below the checkbox</small>
+                </li>
+                <li>
+                  <strong>Percentage of Order</strong>: check this box if this
+                  merchant pays a percentage per delivery<br />
+                  <small>If percentage of order is checked, you must fill out
+                    the "amount" field immediately below the checkbox</small>
+                </li>
+                <li>
+                  Checking both "flat fee" and "percentage of order" calculated
+                  commission according to this formula:
+                  <code>$fee + $percentageOfOrderTotal</code>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Location</strong>: Change the merchant's address and
+              available service zones
+              <ul class='browser-default'>
+                <li>
+                  <strong>Enter Address</strong>: The merchant's Address
+                </li>
+                <li>
+                  <strong>Use Default Zones</strong>: Use your company's default
+                  service zones for this merchant
+                </li>
+                <li>
+                  <strong>Choose Custom Zones</strong>: Select custom zones for
+                  this merchant
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section id='ad_app_settings' data-title='Admin Dashboard: App Settings'>
+          <h4 class='section-header'>App Settings</h4>
+          <h5>General Settings</h5>
+          <p>
+            On this page, you can edit your company's general contact
+            information, including company name, public phone number, public
+            email address, public location, and your company's logo.
+          </p>
+          <hr />
+          <h5>Manage Currency</h5>
+          <p>
+            Manage your currency preferences here.
+          </p>
+          <hr />
+          <h5>User List</h5>
+          <p>
+            View, Edit, Add, and Delete administrative user accounts here.
+          </p>
+          <hr />
+          <h5>SEO/Social</h5>
+          <p>
+            Change settings for Facebook, Twitter, Google/Schema, Instagram,
+            LinkedIn, meta title and description, and link to your Favicon.
+          </p>
+        </section>
+
+        <section id='ad_payment_settings' data-title='Admin Dashboard: Payment Settings'>
+          <h4 class='section-header'>Payment Settings</h4>
+          <h5>Billing Settings</h5>
+          <p>
+            Add your credit card to be automatically billed for your application
+            and usage fees.
+          </p>
+          <hr />
+          <h5>Stripe Settings</h5>
+          <p>
+            Connect your Stripe account here to enable pickups from merchants.
+            If you enable pickups and don't see payments from merchants, make
+            sure they've added their credit cards in the merchant dashboard to
+            enable pickups. <!--TODO:Link to merchant->enable pickup-->
+          </p>
+        </section>
+
+        <section id='ad_company_settings' data-title='Admin Dashboard: Company Settings'>
+          <h4 class='section-header'>Company Settings</h4>
+          <h5>Analytics</h5>
+          <p>
+            View and change your Google Analytics script code from here. To get
+            a Google Analytics account, <a href='https://accounts.google.com/SignUpExpress?service=analytics&continue=https%3A%2F%2Fanalytics.google.com%2Fanalytics%2Fweb%2F%23' target='_blank'>click here</a>.
+            To get your Google Analytics Script code, <a href='https://analytics.google.com' target='_blank'>Log In</a>
+            to your Google account, click "admin" at the bottom of the menu, and
+            click "tracking code" (under Tracking Info, in the second column).
+            Select the text between the <code>&lt;script&gt;&lt;/script&gt;</code>
+            tags, copy it, and paste it into the text field on Gittr. Click
+            'save' and you'll be all set. We'll include your script on every
+            front-end page.
+          </p>
+          <hr />
+          <h5>Customer List</h5>
+          <p>
+            A list of your customers who have ordered from you, including
+            customer name, address, email address, and phone number. This
+            section will not be populated until users have placed orders with your
+            company.
+          </p>
+          <hr />
+          <h5>Zones</h5>
+          <p>
+            View and edit your service areas
+            <!--TODO:Brennan can write more about this-->
+          </p>
+          <hr />
+          <h5>Options</h5>
+          <p>
+            View and edit your company's description, upload a background image
+            to be used on the front page of your site, view and edit your
+            TwinJet API Key and Google Maps API Key.
+          </p>
+          <h5>TwinJet API Key</h5>
+          <!--TODO:How to get a TwinJet account & API Key?-->
+          <h5>Google Maps API Key</h5>
+          <p>
+            To get a Google Maps API Key, follow the instructions <a href='https://developers.google.com/maps/documentation/javascript/get-api-key' target='_blank'>Here</a>.
+          </p>
+          <hr />
+          <h5>Privacy Policy</h5>
+          <p>
+            View and edit your company's privacy policy. Gittr's privacy policy
+            should be all encompassing, but some companies have special
+            considerations according to their location. If you need to include
+            anything that isn't covered in the default privacy policy, add it
+            here to be shown in addition to the default.
+          </p>
+        </section>
+
+        <section id='ad_reports' data-title='Admin Dashboard: Reports'>
+          <h4 class='section-header'>Reports</h4>
+          <h5>Sales Report</h5>
+          <p>
+            The Sales Report view gives you an overview of a day's sales,
+            reflected by the amount of orders received, total sales, payouts,
+            and projected profits. To see the sales report for a specific date,
+            click the selection box at the top of the page. Click "submit" to
+            see the selected date's sales report.
+          </p>
+          <hr />
+          <h5>Sales Summary Report</h5>
+          <p>
+            The sales summary report provides the same information as the sales
+            report view but on a larger scale - it goes through all orders.
+          </p>
+        </section>
+
+        <section id='ad_database' data-title='Admin Dashboard: Database'>
+          <h4 class='section-header'>Database</h4>
+          <p>
+            The Database view allows you to update your database backup file and
+            update the database from a saved file. This functionality is used in
+            instances where your app installation became corrupted or otherwise
+            failed to properly function, or you begin to self-host your Gittr
+            installation. When you move to a self-hosted plan, we'll provide you
+            with a database backup file and you'll have the option to import all
+            previous data.
+          </p>
+        </section>
+
+        <section id='md_merchant_role' data-title='The Role of the Merchant'>
+          <h4 class='section-header'>The Role of the Merchant</h4>
+          <p>
+
+          </p>
+        </section>
+
+        <section id='md_merchant_dashboard' data-title='Merchant Dashboard'>
+          <h4 class='section-header'>Merchant Dashboard</h4>
+          <p class='flow-text'>
+            The Merchant Dashboard is where all of the merchant settings are
+            viewed and changed. From here, users can control merchant's menus,
+            hours, general settings, and have some control over orders. Here is
+            a snapshot of the dashboard:<br />
+            <img src='assets/images/merchant_dashboard.png' />
+          </p>
+          <hr />
+          <h5>Menu Items</h5>
+          <ul class='browser-default'>
+            <li>
+              <strong>View Website</strong>: See the merchant's website
+            </li>
+            <li>
+              <strong>Dashboard</strong>: The front page of the merchant dashboard
+            </li>
+            <li>
+              <strong>Order Status</strong>: View all orders
+            </li>
+            <li>
+              <strong>Settings</strong>: Drop-down list
+              <ul class='browser-default'>
+                <li>
+                  <strong>General Settings</strong>: View and change basic
+                  information about this merchant.
+                </li>
+                <li>
+                  <strong>Hours</strong>: View and change this merchant's hours
+                </li>
+                <li>
+                  <strong>Holidays</strong>: Add, edit, and delete special
+                  days this merchant is closed
+                </li>
+                <li>
+                  <strong>Stripe</strong>: View and change Stripe settings
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Menu</strong>: Drop-down list
+              <ul class='browser-default'>
+                <li>
+                  <strong>Menus</strong>: View, edit, and delete menus
+                </li>
+                <li>
+                  <strong>Categories</strong>: View, edit, and delete menu categories
+                </li>
+                <li>
+                  <strong>Items</strong>: View, edit, and delete menu items
+                </li>
+                <li>
+                  <strong>Subcategories</strong>: View, edit, and delete menu
+                  subcategories
+                </li>
+                <li>
+                  <strong>Subitems</strong>: View, edit, and delete menu subitems
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Reports</strong>: Drop-down list
+              <ul class='browser-default'>
+                <li>
+                  <strong>Sales Report</strong>: See a day's sales report
+                </li>
+                <li>
+                  <strong>Sales Summary Report</strong>: See a cumulative sales report
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>User Settings</strong>: Access your user settings
+            </li>
+            <li>
+              <strong>Log Out</strong>: Log out of your account
+            </li>
+          </ul>
+        </section>
+
+        <section id='md_dashboard' data-title='Merchant Dashboard: The Dashboard'>
+          <h4 class='section-header'>The Dashboard</h4>
+          <p>
+            The Dashboard holds a snapshot of what's currently going on with the
+            logged-in merchant. There are two collapsible items - Active Orders
+            and Sales Summary. Clicking the "Active Orders" dropdown will show a
+            list of currently active orders with the option to view them.
+            Clicking the "Sales Summary" dropdown will show an overview of the
+            day's activity in real numbers, including an order count, generated
+            revenue, payouts, and profits.
+          </p>
+        </section>
+
+        <section id='md_order_status' data-title="Merchant Dashboard: Order Status">
+          <h4 class='section-header'>Order Status</h4>
+          <p class='flow-text'>
+            All of the merchant's orders will appear on this screen, separated
+            into four categories:<br />
+            <strong>New, Active, Completed,</strong> and <strong>Refunded.</strong>
+          </p>
+          <hr />
+          <p>
+            <strong>New</strong> orders are orders that have been received, paid
+            for, and dispatched to TwinJet but have not yet accepted by the
+            merchant or company. Accepting the order by clicking "Accept" under
+            "actions" will move the order to the "active" category. Orders can
+            be accepted by merchants or company administrators. Declining the
+            order by clicking "Decline" under "actions" will move the order to
+            the "refunded" category and the order will be refunded to the
+            customer. When an order is received, three emails are sent out: one
+            to your company, one to the merchant to make them aware, and one to
+            the customer as a receipt. The merchant has the option from their
+            email alert to accept or decline the order. Once the order has been
+            accepted or declined, there is nothing futher to do (except make the
+            order, of course!).<br />
+            <strong>Completed</strong> orders are orders that have been
+            delivered to the customer.<br />
+            <strong>Refunded</strong> orders have been declined or refunded to the customer.
+            These orders will still be available for reference.<br />
+          </p>
+        </section>
+
+        <section id='md_menu' data-title='Merchant Dashboard: Menus'>
+          <h4 class='section-header'>Menus</h4>
+          <p class='flow-text'>
+            Menus are the heart of any merchant. They are broken down in a
+            hierarchy of data points, each with a parent. The hierarchy looks
+            like this:
+            <pre>
+<code>Merchant > Menus > Categories > Items > Subcategories > Subitems</code>
+            </pre>
+          </p>
+          <hr />
+          <h5>The Menus</h5>
+          <p>
+            <!--TODO: Add links to categories, items, subcats, and subitems-->
+            Menus contain all of the categories, items, subcategories, and subitems
+            available from a merchant. In addition to those items, they also
+            have specific characteristics, including the timeframe the menu is
+            served and the menu's name and description.
+          </p>
+          <hr />
+          <h5 id='md_menu_editor'>Menu Editor</h5>
+          <p>
+            To open the menu editor, click the 'menu' drop down
+            button, then 'menus'. Click the 'edit' (<i class='material-icons inline'>mode_edit</i>)
+            button in the row of the menu you want to edit. <br />
+            In the menu editor, you can change the menu's name and description,
+            bring up the serving time editor, delete serving times and edit other
+            menu options.
+          </p>
+          <hr />
+          <h5>Serving Times</h5>
+          <p>
+            To view or edit a menu's serving time, <a href='#md_menu_editor'>open the menu editor</a>,
+            then click the 'edit' button of the timeframe you want to edit. <br />
+            Select the start time and end time and click 'submit' to change
+            this serving time. <br />
+            From the menu editor you can also delete a timeframe by clicking the
+            'delete' (<i class='material-icons inline'>delete</i>) button. <br />
+            You can add a timeframe from the menu overview screen by clicking the
+            'add' (<i class='material-icons inline'>add</i>) button in the row of the menu
+            you want the timeframe added to. Clicking this button will bring up
+            the timeframe editor, where you can select a start and end time. Click
+            'submit' to confirm this timeframe and add it to the menu.
+          </p>
+          <hr />
+          <h5>Deleting A Menu</h5>
+          <p>
+            At the bottom of the menu editor is the "delete menu" button. To
+            delete the current menu, simply click this button.
+          </p>
+          <div class='card-panel red'>
+            <span><i class='material-icons medium left'>warning</i>
+              Deleting a menu will also delete all of it's related items. Do not
+              delete a menu if you want to preserve categories, items,
+              subcategories, or subitems associated with that menu.
+            </span>
+          </div>
+          <hr />
+          <h5>Duplicating a Menu</h5>
+          <p>
+            To create a new menu with the same settings, click the 'duplicate' (<i class='material-icons inline'>control_point_duplicate</i>)
+            button in the row of the menu you want to duplicate on the menus page.
+          </p>
+          <hr />
+          <h5>Creating a Menu</h5>
+          <p>
+            To create a new menu, simply click the "add menu" (<i class='material-icons inline'>add</i>)
+            button on the menus page. Fill out the name and description and
+            click "submit" to save. The new menu will appear on the "menus" page.
+          </p>
+        </section>
+
+        <section id='md_menu_categories' data-title="Merchant Dashboard: Menu Categories">
+          <h4 class='section-header'>Menu Categories</h4>
+          <p>
+            The second level of organization in a menu are <strong>categories</strong>.
+            A category is a group of items that is assigned to one or more menus.
+            To access the categories, click the menus drop-down in the navigation
+            panel, then click 'categories'. The categories page lists all the
+            categories of a merchant, some features, a description, and a button
+            (<i class='material-icons inline'>mode_edit</i>) to open the category editor.
+          </p>
+          <hr />
+          <h5>Creating a Category</h5>
+          <p>
+            To create a category, click the 'add category' (<i class='material-icons inline'>add</i>)
+            button. Select the menus to add the category to, and enter a name
+            and (optional) description. Click "submit" to save.
+          </p>
+          <hr />
+          <h5>Editing a Category</h5>
+          <p>
+            To show the category editor, click the "edit" (<i class='material-icons inline'>mode_edit</i>)
+            button in the row of the category you want to edit. You can edit the
+            name, menus this category appears on, and it's description. Click
+            "submit" to save your changes.
+          </p>
+          <hr />
+          <h5>Deleting a Category</h5>
+          <p>
+            To delete a category, pull up the category editor (described in the
+            previous section - Editing a Category), then click the 'delete' button.
+            Deleting a category will not delete any items associated with that
+            category - only the association.
+          </p>
+        </section>
+
+        <section id='md_items' data-title='Merchant Dashboard: Menu Items'>
+          <h4 class='section-header'>Menu Items</h4>
+          <p>
+            At the third level of menu organization are <strong>items</strong>.
+            An item is a product that's available to be purchased, can have
+            subcategories assigned to it, and is itself assigned to a menu category.<br />
+            Items have a few main characteristics: menu &amp; category assignment,
+            name, description, and photo. Optional characteristics include assigned
+            subcategories, default price, and sizes. To view, edit, add, and delete
+            items, click the "menu" drop-down item in the navigation panel, then
+            click "items".
+          </p>
+          <hr />
+          <h5>Creating an Item</h5>
+          <p>
+            To create an item, click "add item" (<i class='material-icons inline'>add</i>)
+            on the items page. Select a menu and category to assign the item to,
+            enter it's name, optional description, and optional price. A photo
+            can be selected for upload. Click "submit" to save the item.
+          </p>
+          <hr />
+          <h5>Editing an Item</h5>
+          <p>
+            To edit an item, click the item's "edit" (<i class='material-icons inline'>mode_edit</i>)
+            button. In the item editor, menu and category assignment can be
+            changed, the name and description can be edited, a new photo can
+            be uploaded, the item's photo can be deleted, the default price can
+            be changed, and the item's sizes can be viewed, selected for editing,
+            or deleted.<br />
+            The item editor enables subcategories to be assigned to items. To
+            assign a subcategory to an item, click the checkbox next to the
+            subcategory name to be assigned. <br />
+            To delete the item, click "delete item" at the bottom of the item
+            editor. Deleting an item will not delete it's subcategories or subitems,
+            just the association.
+          </p>
+          <hr />
+          <h5>Item Sizes</h5>
+          <p>
+            Some items may have different sizes and pricing. To add a size for
+            an item, click the "add size" (<i class='material-icons inline'>add</i>)
+            button in the main items screen. Then in the size editor, enter the
+            size name and price. Click "submit" to save that size. <br />
+            <strong>To edit an item's size</strong>, open the item's editor and
+            scroll to the bottom. Each size will have an "edit" button next to it.
+            Click that button to show the size editor. The name and price can be
+            edited. <br />
+            <strong>To delete an item size</strong>, open the item's editor and
+            scroll to the bottom. Each size will have a "delete" button next to
+            it. Click that button to delete that size.
+          </p>
+        </section>
+
+        <section id='md_subcategories' data-title="Merchant Dashboard: Menu Subcategories">
+          <h4 class='section-header'>Menu Subcategories</h4>
+          <p>
+            The fourth level of organization in a menu are <strong>subcategories</strong>.
+            A subcategory is a group of items that is assigned to one or many
+            items. To access the subcategories, click the menus drop-down in the
+            navigation panel, then click 'subcategories'. The subcategories page
+            lists all the subcategories of a merchant, some features, a
+            description, and a button (<i class='material-icons inline'>mode_edit</i>)
+            to open the subcategory editor.
+          </p>
+          <hr />
+          <h5>Creating a Subcategory</h5>
+          <p>
+            To create a category, click the 'add subcategory' (<i class='material-icons inline'>add</i>)
+            button. Select the menu to add the subcategory to, and enter a name
+            and (optional) description. Click "submit" to save.
+          </p>
+          <hr />
+          <h5>Editing a Subcategory</h5>
+          <p>
+            To show the subcategory editor, click the "edit" (<i class='material-icons inline'>mode_edit</i>)
+            button in the row of the subcategory you want to edit. You can edit
+            the name, menu this subcategory appears on, its description, and
+            change whether this subcategory is a required selection. Click
+            "submit" to save your changes.
+          </p>
+          <hr />
+          <h5>Deleting a Subcategory</h5>
+          <p>
+            To delete a subcategory, pull up the subcategory editor (described
+            in the previous section - Editing a Subategory), then click the
+            'delete' button. Deleting a subcategory will not delete any items
+            associated with that category - only the association.
+          </p>
+        </section>
+
+        <section id='md_subitems' data-title='Merchant Dashboard: Menu Subitems'>
+          <h4 class='section-header'>Menu Subitems</h4>
+          <p>
+            At the fifth level of menu organization are subitems. A subitem is a
+            product that's available to be purchased, and is itself assigned to
+            parent subcategories.<br />
+            Subitems have a few main characteristics: menu & subcategory
+            assignment, name, optional description, price, and optional photo. To
+            view, edit, add, and delete subitems, click the "menu" drop-down item in
+            the navigation panel, then click "subitems".
+          </p>
+          <hr />
+          <h5>Creating a Subitem</h5>
+          <p>
+            To create a subitem, navigate to the subitems page, then click "add subitem"
+            (<i class='material-icons inline'>add</i>). In the subitem editor,
+            select the menu and subcategory to add the subitem to, then enter its name and
+            price. The description and photo are optional. To save the subitem,
+            click "submit".
+          </p>
+          <hr />
+          <h5>Editing a Subitem</h5>
+          <p>
+            To edit a subitem, navigate to the subitems page, then click "edit
+            subitem" (<i class='material-icons inline'>mode_edit</i>) in that
+            subitem's row. In the subitem editor, menu and category assignment,
+            name, price, description, and the subitem photo can all be edited. To
+            save changes, click "submit".
+          </p>
+          <hr />
+          <h5>Deleting a Subitem</h5>
+          <p>
+            To delete a subitem, open the subitem editor (as described in the
+            previous section - Editing a Subitem), then scroll to the bottom of
+            the editor. Click "delete subitem" to delete the subitem. This will
+            not delete anything else.
+          </p>
+        </section>
+
+        <section id='md_reports' data-title='Merchant Dashboard: Reports'>
+          <h4 class='section-header'>Reports</h4>
+          <h5>Sales Report</h5>
+          <p>
+            The Sales Report view gives you an overview of a day's sales,
+            reflected by the amount of orders received, total sales, payouts,
+            and projected profits. To see the sales report for a specific date,
+            click the selection box at the top of the page. Click "submit" to
+            see the selected date's sales report.
+          </p>
+          <hr />
+          <h5>Sales Summary Report</h5>
+          <p>
+            The sales summary report provides the same information as the sales
+            report view but on a larger scale - it goes through all orders.
+          </p>
+        </section>
+
+        <section id='user_dashboard' data-title='User Dashboard: Overview'>
+          <h4 class='section-header'>User Dashboard: Overview</h4>
+          <p>
+            The User dashboard is where customers can view their order history
+            and access their settings. Here is a snapshot of the user dashboard:
+          </p>
+          <img src='assets/images/user_dashboard.png' />
+          <hr />
+          <h5>Recent Orders</h5>
+          <p>
+            The list of recent orders will contain all orders from a user. It
+            lists the order number, the merchant the order originated from,
+            order total, payment method, and a button to view the order receipt.
+          </p>
+          <hr />
+          <h5>Settings</h5>
+          <p>
+            To access user settings, click the "settings" link in the user
+            profile card.<br />
+            The User Settings page allows user to change information about
+            themselves, view, add to, and edit their address book, view their
+            order history, and view, add, and edit their credit cards.
+          </p>
+        </section>
+
+        <section id='ud_profile' data-title='User Dashboard: Profile Settings'>
+          <h4 class='section-header'>User Dashboard: Profile Settings</h4>
+          <p>
+            The profile settings tab of the user settings page makes it possible
+            to edit a user's Name, Email Address, change their password, update
+            their phone number, and change their profile image. To edit any of
+            these fields, simply enter the change in the relevant field and click
+            "submit".
+          </p>
+          <hr />
+          <h5>Updating Passwords</h5>
+          <p>
+            To update a password, the typed password must me re-typed and match
+            the first typed password to be updated. If both fields match, the
+            lock icon in the confirmation field will change from open (<i class='material-icons inline'>lock_open</i>)
+            to closed (<i class='material-icons inline'>lock</i>).
+          </p>
+        </section>
+
+        <section id='ud_address_book' data-title='User Dashboard: Address Book'>
+          <h4 class='section-header'>User Dashboard: Address Book</h4>
+          <p>
+            The Address Book is a list of stored addresses that can be used to
+            make checking out quicker. To open the address book, open the user
+            settings as described in <a href='#user_dashboard'>User Dashboard overview</a>,
+            then click the "address book" tab.
+          </p>
+          <hr />
+          <h5>Adding an Address</h5>
+          <p>
+            To add a new entry to the address book, click "add address" (<i class='material-icons inline'>add</i>)
+            to show the address editor. Enter the address in the "enter address"
+            input box. A label, notes, and "save as default" option can also be
+            added but are not required. Click "save" to save the address.
+          </p>
+          <hr />
+          <h5>Editing an Address</h5>
+          <p>
+            To edit an address, click the "edit" (<i class='material-icons inline'>mode_edit</i>)
+            button for the address to be edited. Once in the address editor, the
+            address label, default selection, address, and notes can be edited.
+          </p>
+          <hr />
+          <h5>Deleting an Address</h5>
+          <p>
+            To delete an address, click the "delete" (<i class='material-icons inline'>mode_edit</i>)
+            button for the address to be deleted. Click "confirm" on the confirmation
+            box to delete the address.
+          </p>
+        </section>
+
+        <section id='ud_order_history' data-title='User Dashboard: Order History'>
+          <h4 class='section-header'>Order History</h4>
+          <p>
+            The Order History tab contains a list of past orders for the signed
+            in user. To view the order history, open the user settings as described
+            in <a href='#user_dashboard'>User Dashboard overview</a>, then click
+            the "order history" tab.<br />
+            Once loaded, the order history tab contains an overview of all previous
+            orders, including the order number, originating merchant, order total,
+            payment method, and a button to view the order's details (<i class='material-icons inline'>search</i>). <br />
+            Clicking the "order details" button shows the order's details,
+            including the merchant, date, time, order type (delivery or pickup),
+            order items, delivery address (or pickup address), payment method,
+            and the order total (including subtotal, tax, tip, and delivery fee [if applicable]).
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src='assets/js/hilitor.js' type='text/javascript'></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+  <script src='assets/materialize/js/materialize.min.js' type='text/javascript'></script>
+  <script src='assets/js/index.js' type='text/javascript'></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98812449-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98812449-3');
+</script>
+
+</html>

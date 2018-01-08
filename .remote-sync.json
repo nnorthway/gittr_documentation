@@ -1,0 +1,15 @@
+{
+  "transport": "ftp",
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "eat.bike",
+  "target": "gittr.co/docs",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "naten",
+  "password": "utrhf5cs",
+  "watch": []
+}
