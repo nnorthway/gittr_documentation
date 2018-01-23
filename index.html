@@ -334,9 +334,21 @@
               </div>
               <div class='collapsible-body'>
                 <p>
-                  Add your company's zones in the zone editor.
-                  <!--TODO: Brennan, please explain zones here-->
+                  In the admin dashboard navigation panel, click "App settings",
+                  then click "Zones". Here, your company's zones, can be added by
+                  clicking the + icon in the lower right corner. If you set your company Location
+                  in the company settings, the maps will auto zoom to your area.
+                  You can either draw polygons to designate each zone, or you can upload zone data
+                  from Twinjet or from local GIS files/database, .kml and .geojson files are supported.
+                  zones can be set to default zone for merchant assignments and quicker searching.
+                  to upload zones, press the ^ button at the top left of the map.
                 </p>
+                <div class='card-panel red'>
+                  <span>
+                    <i class='material-icons medium left'>warning</i>
+                    Failure to setup zones will make merchants unsearchable
+                  </span>
+                </div>
               </div>
             </li>
             <li>
@@ -682,10 +694,10 @@
           <hr />
           <h5>Stripe Settings</h5>
           <p>
-            Connect your Stripe account here to enable pickups from merchants.
-            If you enable pickups and don't see payments from merchants, make
-            sure they've added their credit cards in the merchant dashboard to
-            enable pickups. <!--TODO:Link to merchant->enable pickup-->
+            Connect your Stripe account here to accept payments to your company
+            on behalf of partnered merchants. To enable pick ups and direct delivery
+            order payments to merchants, make sure they've enabled Stripe Connect
+            on their dashboard, and are connected to their stripe account.
           </p>
         </section>
 
@@ -715,7 +727,9 @@
           <h5>Zones</h5>
           <p>
             View and edit your service areas
-            <!--TODO:Brennan can write more about this-->
+            Zones can be uploaded from .kml or .geojson data from google maps.
+            Default zones can be designated to make the search math go quicker
+            for the customer.
           </p>
           <hr />
           <h5>Options</h5>
@@ -725,7 +739,8 @@
             TwinJet API Key and Google Maps API Key.
           </p>
           <h5>TwinJet API Key</h5>
-          <!--TODO:How to get a TwinJet account & API Key?-->
+          To get a Twinjet API key while logged in to twinjet, go to https://www.twinjet.co/apiprofiles/
+          
           <h5>Google Maps API Key</h5>
           <p>
             To get a Google Maps API Key, follow the instructions <a href='https://developers.google.com/maps/documentation/javascript/get-api-key' target='_blank'>Here</a>.
