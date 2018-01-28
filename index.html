@@ -56,6 +56,9 @@
                   <a href='#ad_order_status'>Order Status</a>
                 </li>
                 <li>
+                  <a href='#ad_notifications'>Notifications</a>
+                </li>
+                <li>
                   <a href='#ad_merchants'>Merchants</a>
                 </li>
                 <li>
@@ -66,6 +69,9 @@
                 </li>
                 <li>
                   <a href='#ad_company_settings'>Company Settings</a>
+                </li>
+                <li>
+                  <a href='#ad_api_settings'>API Settings</a>
                 </li>
                 <li>
                   <a href='#ad_reports'>Reports</a>
@@ -94,6 +100,9 @@
                   <a href='#md_dashboard'>The Dashboard</a>
                 </li>
                 <li>
+                  <a href='#md_settings'>Settings</a>
+                </li>
+                <li>
                   <a href='#md_order_status'>Order Status</a>
                 </li>
                 <li>
@@ -104,6 +113,9 @@
                 </li>
                 <li>
                   <a href='#md_items'>Items</a>
+                </li>
+                <li>
+                  <a href='#md_item_options'>Item Options</a>
                 </li>
                 <li>
                   <a href='#md_subcategories'>Subcategories</a>
@@ -205,204 +217,40 @@
             prepares the order for pickup by the company. The company then completes
             delivery.<br />
           </p>
-          <hr />
-
         </section>
 
         <section id='setting_up' data-title="Setting Up Your Account">
           <h4 class='section-header'>Setting Up Your Account</h4>
           <p>
-            After signing up for your Gittr account, getting your response email,
-            confirming some documents and getting your company's URL, you'll be
-            able to sign in to your admin account with the email and password
-            credentials we've provided you with. Before you do <b>anything</b>
-            in the admin dashboard, we strongly encourage you change your password. <br />
-            To change your password, once logged in to the admin dashboard, click
-            "user settings" in the navigation panel. Enter your new password and
-            enter it again in the "confirm password" field. Click "submit" and
-            your password will be changed. To confirm your change, log out, then
-            log back in using the <code>admin/login</code> link.<br />
-            Once you're logged back in, complete the following tasks (not necessarily in order):
+            After signing up for Gittr, you'll be sent an email with your URL to
+            start set up. Fill out the required fields and you'll
+            be redirected to the login screen. Once logged in, we strongly
+            encourage you to change your password. <br />
+            After changing your password, log out, then log back in to confirm
+            the change. <br />
           </p>
-          <ul class='collapsible' data-collapsible='accordion'>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Verify Company Information
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "app settings",
-                  then click "general settings". Verify that the following
-                  information is correct:
-                </p>
-                <ul>
-                  <li>
-                    Company Name
-                  </li>
-                  <li>
-                    Company Public Phone number
-                  </li>
-                  <li>
-                    Company Public Email
-                  </li>
-                  <li>
-                    Company Public Location
-                  </li>
-                </ul>
-                <p>
-                  Additionally, a logo can be uploaded here for use on all website
-                  pages, emails, and other correspondence.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Social Media Information
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "app settings",
-                  then click "SEO/Social". Enter the information for your company's
-                  Facebook, Twitter, Google/Schema, General social, meta, and
-                  iconography.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Billing Settings
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "payment settings",
-                  then click "billing settings". Here, you can verify that the correct plan
-                  is selected (and select the one for you if it is not already
-                  set up) and enter your credit card information for automatic
-                  billing.
-                </p>
-                <div class='card-panel red'>
-                  <span>
-                    <i class='material-icons medium left'>warning</i>
-                    You must fill out this section before you can take orders.
-                    Failure to complete this section will result in all merchants
-                    being unavailable.
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Stripe Settings
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "payment settings",
-                  then click "Stripe Settings". Enter the required information
-                  to enable payments from your merchants to Stripe.
-                </p>
-                <div class='card-panel red'>
-                  <span>
-                    <i class='material-icons medium left'>warning</i>
-                    You must fill out this section before you can take orders.
-                    Failure to complete this section will result in all merchants
-                    being unavailable.
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Up Analytics
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "company settings",
-                  then click "analytics". Enter the script provided by Google.
-                </p>
-                <div class='card-panel green'>
-                  <span>
-                    <i class='material-icons medium left'>check_circle</i>
-                    Failure to complete this task will not have any affect on
-                    usage or performance of Gittr.
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Up Zones
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "App settings",
-                  then click "Zones". Here, your company's zones, can be added by
-                  clicking the + icon in the lower right corner. If you set your company Location
-                  in the company settings, the maps will auto zoom to your area.
-                  You can either draw polygons to designate each zone, or you can upload zone data
-                  from Twinjet or from local GIS files/database, .kml and .geojson files are supported.
-                  zones can be set to default zone for merchant assignments and quicker searching.
-                  to upload zones, press the ^ button at the top left of the map.
-                </p>
-                <div class='card-panel red'>
-                  <span>
-                    <i class='material-icons medium left'>warning</i>
-                    Failure to setup zones will make merchants unsearchable
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Options
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "company settings",
-                  then click "options". Here, your company's description,
-                  homepage background image, TwinJet and Google Maps API keys, and
-                  timezone can be set. All of these options should be set, otherwise
-                  app performance and functionality will be suffered.
-                </p>
-                <div class='card-panel red'>
-                  <span>
-                    <i class='material-icons medium left'>warning</i>
-                    Failure to set TwinJet or Google Maps API keys or timezone
-                    will make the app unable to function.
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Privacy Policy
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  In the admin dashboard navigation panel, click "company settings",
-                  then click "privacy policy". Here, your company's custom privacy
-                  policy can be set. It's not a necessary option but it good to
-                  have.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class='collapsible-header'>
-                <i class='material-icons'>arrow_drop_down</i> Set Up Merchants
-              </div>
-              <div class='collapsible-body'>
-                <p>
-                  Now that all options are set, your merchants are ready to start
-                  getting set up, building menus, and accepting orders!
-                </p>
-              </div>
-            </li>
-          </ul>
         </section>
 
         <section id='ad_admin_role' data-title='The Role of the Administrator'>
           <h4 class='section-header'>The Role of the Administrator</h4>
           <p>
-
+            The administrator (or administrative team) is a representative of
+            the courier company that Gittr is licensed to. They have a few
+            important responsibilities, including:
+            <ul>
+              <li>
+                Creating and managing merchants and merchant accounts
+              </li>
+              <li>
+                Managing company settings
+              </li>
+              <li>
+                Managing orders (including dispatching, cancelling, and refunding)
+              </li>
+              <li>
+                Managing company settings
+              </li>
+            </ul>
           </p>
         </section>
 
@@ -428,11 +276,11 @@
               <strong>Order Status</strong>: View all orders
             </li>
             <li>
+              <strong>Notifications</strong>: View and take action on notifications
+            </li>
+            <li>
               <strong>Merchants</strong>: Drop Down List
               <ul class='browser-default'>
-                <li>
-                  <strong>Commission</strong>: View Merchant Commission
-                </li>
                 <li>
                   <strong>List</strong>: View and access all merchants and administrative merchant settings
                 </li>
@@ -443,9 +291,6 @@
               <ul class='browser-default'>
                 <li>
                   <strong>General Settings</strong>: View and change basic information about your company
-                </li>
-                <li>
-                  <strong>Manage Currency</strong>: Manage Currency Settings
                 </li>
                 <li>
                   <strong>User List</strong>: View and edit other administration and merchant user profiles
@@ -470,19 +315,22 @@
               <strong>Company Settings</strong>: Drop-down List
               <ul class='browser-default'>
                 <li>
-                  <strong>Analytics</strong>: View and change your Google Analytics Script code
+                  <strong>Analytics</strong>: View and manage your Google Analytics Script code
                 </li>
                 <li>
                   <strong>Customer List</strong>: A list of your customers
                 </li>
                 <li>
-                  <strong>Zones</strong>: View and edit your service areas
+                  <strong>Zones</strong>: View and manage your service areas
                 </li>
                 <li>
-                  <strong>Options</strong>: View and edit your company's description and other options
+                  <strong>Options</strong>: View and manage your company's description and other options
                 </li>
                 <li>
-                  <strong>Privacy Policy</strong>: View and edit your company's privacy policy
+                  <strong>Privacy Policy</strong>: View and manage your company's privacy policy
+                </li>
+                <li>
+                  <strong>API Settings</strong>: View and manage your company's API Keys and settings
                 </li>
               </ul>
             </li>
@@ -528,20 +376,24 @@
           </p>
           <hr />
           <p>
-            <strong>New</strong> orders are orders that have been received, paid
-            for, and dispatched to TwinJet but have not yet accepted by the
-            merchant or your company. Accepting the order by clicking "Accept"
-            under "actions" will move the order to the "active" category. Orders
-            can be accepted by merchants or company administrators. Declining
-            the order by clicking "Decline" under "actions" will move the order
-            to the "refunded" category and the order will be refunded to the
-            customer.<br />
+            <strong>New</strong> orders are orders that have been received and
+            paid for but have not yet accepted by the merchant or your company.
+            Accepting the order by clicking "Accept" under "actions" will move
+            the order to the "active" category. Orders can be accepted by
+            merchants or company administrators. Declining the order by clicking
+            "Decline" under "actions" will move the order to the "refunded"
+            category and the order will be refunded to the customer.<br />
             When an order is received, three emails are sent out: one to your
-            company, one to the merchant to make them aware, and one to the
+            company, one to the merchant to notify them, and one to the
             customer as a receipt. The merchant has the option from their email
             alert to accept or decline the order. Once the merchant has accepted
             or declined an order, there is nothing you need to do further (except
-            complete the delivery, of course!).
+            complete the delivery, of course!).<br />
+            If your company does not enable TwinJet, the order status can be
+            changed from this screen. To change an order's status, click the
+            "status" drop down on the order. Select the status ("cancelled",
+            "ready", "picked up", or "delivered") to change it to. The status
+            will automatically update once a status is selected.
           </p>
           <p>
             <strong>Active</strong> orders are orders that have been received,
@@ -557,15 +409,29 @@
             <strong>Refunded</strong> orders have been declined or refunded to
             the customer. These orders will still be available for reference.
           </p>
+          <p>
+            <strong>Cancelled</strong> order have been cancelled due to a reason
+            beyond control of the company. Various reasons for cancelled orders
+            include a customer cancelling the order, a merchant cancelling the
+            order due to product shortage, or a company cancelling an order
+            because it was undeliverable.
+          </p>
+        </section>
+
+        <section id='ad_notifications' data-title='Admin Dashboard: Notifications'>
+          <h4 class='section-header'>Notifications</h4>
+          <p>
+            Notifications will let you know about important updates and
+            information from Gittr. We will also let you know here about missing
+            configuration items that will help Gittr function better if they are
+            set. Since all Gittr users benefit mutually from ensuring good SEO,
+            we'll also let you know through the notifications if there is anything
+            you can set up to encourage better rankings across the board.
+          </p>
         </section>
 
         <section id='ad_merchants' data-title='Admin Dashboard: Merchants'>
           <h4 class='section-header'>Merchants</h4>
-          <hr />
-          <h5>Commission</h5>
-          <p>
-            Merchant commission is calculated and shown here.
-          </p>
           <hr />
           <h5>List</h5>
           <p>
@@ -615,6 +481,16 @@
               </ul>
             </li>
             <li>
+              <strong>Minimum Order Amount</strong>: The minimum cart value
+              needed for a customer to order from this merchant
+            </li>
+            <li>
+              <strong>External Menu Link</strong>: If this merchant is partnered
+              but would like to host their menu and ordering on an external menu
+              (like Eat24 or GrubHub), link their menu here. This will disable
+              regular menu views for this merchant.
+            </li>
+            <li>
               <strong>Commission</strong>: Change how a merchant is paid or
               pays your company
               <ul class='browser-default'>
@@ -658,18 +534,13 @@
           </ol>
         </section>
 
-        <section id='ad_app_settings' data-title='Admin Dashboard: App Settings'>
-          <h4 class='section-header'>App Settings</h4>
+        <section id='ad_app_settings' data-title='Admin Dashboard: Company Settings'>
+          <h4 class='section-header'>Company Settings</h4>
           <h5>General Settings</h5>
           <p>
             On this page, you can edit your company's general contact
             information, including company name, public phone number, public
             email address, public location, and your company's logo.
-          </p>
-          <hr />
-          <h5>Manage Currency</h5>
-          <p>
-            Manage your currency preferences here.
           </p>
           <hr />
           <h5>User List</h5>
@@ -701,8 +572,8 @@
           </p>
         </section>
 
-        <section id='ad_company_settings' data-title='Admin Dashboard: Company Settings'>
-          <h4 class='section-header'>Company Settings</h4>
+        <section id='ad_company_settings' data-title='Admin Dashboard: App Settings'>
+          <h4 class='section-header'>App Settings</h4>
           <h5>Analytics</h5>
           <p>
             View and change your Google Analytics script code from here. To get
@@ -726,24 +597,16 @@
           <hr />
           <h5>Zones</h5>
           <p>
-            View and edit your service areas
-            Zones can be uploaded from .kml or .geojson data from google maps.
-            Default zones can be designated to make the search math go quicker
-            for the customer.
+            View and manage your service areas. Zones can be uploaded from .kml
+            or .geojson data from Google Maps. Default zones can be designated
+            to make the search math go quicker for the customer.
           </p>
           <hr />
           <h5>Options</h5>
           <p>
             View and edit your company's description, upload a background image
-            to be used on the front page of your site, view and edit your
-            TwinJet API Key and Google Maps API Key.
-          </p>
-          <h5>TwinJet API Key</h5>
-          To get a Twinjet API key while logged in to twinjet, go to https://www.twinjet.co/apiprofiles/
-          
-          <h5>Google Maps API Key</h5>
-          <p>
-            To get a Google Maps API Key, follow the instructions <a href='https://developers.google.com/maps/documentation/javascript/get-api-key' target='_blank'>Here</a>.
+            to be used on the front page of your site, select your timezone,
+            and set your tax amount.
           </p>
           <hr />
           <h5>Privacy Policy</h5>
@@ -753,6 +616,24 @@
             considerations according to their location. If you need to include
             anything that isn't covered in the default privacy policy, add it
             here to be shown in addition to the default.
+          </p>
+        </section>
+
+        <section id='ad_api_settings' data-title='Admin Dashboard: API Settings'>
+          <h4>API Settings</h4>
+          <p>
+            View and manage API Settings
+          </p>
+          <hr />
+          <h5>TwinJet API Key</h5>
+          To enable TwinJet dispatching, check the "use TwinJet" checkbox and
+          enter your API Key. To get an API key while logged in to TwinJet,
+          follow <a href='https://www.twinjet.co/apiprofiles/' target='_blank'>this link</a>.
+          <hr />
+          <h5>Google Maps API Key</h5>
+          <p>
+            To get a Google Maps API Key, follow the instructions
+            <a href='https://developers.google.com/maps/documentation/javascript/get-api-key' target='_blank'>Here</a>.
           </p>
         </section>
 
@@ -790,7 +671,21 @@
         <section id='md_merchant_role' data-title='The Role of the Merchant'>
           <h4 class='section-header'>The Role of the Merchant</h4>
           <p>
-
+            The merchant is a representative of the business partnered with the
+            courier company Gittr is licensed to. They have a few important
+            responsibilities, including:<br />
+            <ul>
+              <li>
+                Managing Merchant settings, including hours, holidays, contact
+                information, and payment preferences
+              </li>
+              <li>
+                Building and maintaining menus
+              </li>
+              <li>
+                Updating items and menus to reflect item and menu availability
+              </li>
+            </ul>
           </p>
         </section>
 
@@ -897,23 +792,93 @@
           </p>
           <hr />
           <p>
-            <strong>New</strong> orders are orders that have been received, paid
-            for, and dispatched to TwinJet but have not yet accepted by the
-            merchant or company. Accepting the order by clicking "Accept" under
-            "actions" will move the order to the "active" category. Orders can
-            be accepted by merchants or company administrators. Declining the
-            order by clicking "Decline" under "actions" will move the order to
-            the "refunded" category and the order will be refunded to the
-            customer. When an order is received, three emails are sent out: one
-            to your company, one to the merchant to make them aware, and one to
-            the customer as a receipt. The merchant has the option from their
-            email alert to accept or decline the order. Once the order has been
-            accepted or declined, there is nothing futher to do (except make the
-            order, of course!).<br />
+            <strong>New</strong> orders are orders that have been received and
+            paid for, but have not yet accepted by the merchant or company.
+            Accepting the order by clicking "Accept" under "actions" will move
+            the order to the "active" category. Orders can be accepted by
+            merchants or company administrators. Declining the order by clicking
+            "Decline" under "actions" will move the order to the "refunded"
+            category and the order will be refunded to the customer. <br />
+            When an order is received, three emails are sent out: one to the
+            company, one to the merchant to notify them, and one to the customer
+            as a receipt. The merchant has the option from their email alert to
+            accept or decline the order. Once the order has been accepted or
+            declined, there is nothing futher to do (except make the order, of
+            course!).<br />
             <strong>Completed</strong> orders are orders that have been
             delivered to the customer.<br />
             <strong>Refunded</strong> orders have been declined or refunded to the customer.
             These orders will still be available for reference.<br />
+            <strong>Cancelled</strong> orders have been cancelled by the courier
+            company.
+          </p>
+        </section>
+
+        <section id='md_settings' data-title='Merchant Dashboard: Settings'>
+          <h4 class='section-header'>Settings</h4>
+          <p class='flow-text'>
+            Managing Merchant Settings properly enables businesses to use Gittr.
+          </p>
+          <hr />
+          <h5>General Settings</h5>
+          <p>
+            To access General Settings, click the "settings" (<i class='material-icons inline'>settings</i>)
+            drop down and select "general settings". This page contains three tabs:
+            General, Location, and Pre-orders.<br />
+            The General Settings tab allows merchant contact settings (name, email,
+            phone, description, contact name, special instructions, slug, logo
+            and background image) to be managed. <br />
+            The Location Settings tab sets the merchant's address<br />
+            The Pre-orders settings tab enables management of pre-orders. Pre-orders
+            are automatically accepted, but pre-orders can be forced by checking
+            "require preorders". Select a spot on the slider to change the amount
+            of time required to place a pre-order.
+          </p>
+          <hr />
+          <h5>Options</h5>
+          <p>
+            To access Options, click the "settings" (<i class='material-icons inline'>settings</i>)
+            drop down and select "options". This page enables the management of
+            the default ready time and TwinJet settings.<br />
+            The Ready Time is the amount of time after an order is placed that
+            it will be ready. This number is usually an approximation, and if
+            you use TwinJet ATC, can be overridden in TwinJet. <br />
+            To enable specific API Keys for specific clients, check the "Use TwinJet" box
+            and set the merchant's API Key. <br />
+            Click "submit" to save any updated options.
+          </p>
+          <hr />
+          <h5>Hours</h5>
+          <p>
+            To view a merchant's hours, click the "settings" (<i class='material-icons inline'>settings</i>)
+            drop down and select "hours". This page shows the currently held hours
+            with options to edit or delete hours and add additional entries. <br />
+            To add a timeframe, click the "add" button. Enter the start (open) time
+            and the end (close) time, then click "submit" to save the timeframe. <br />
+            To edit a timeframe, click the timeframes "edit" (<i class='material-icons inline'>mode_edit</i>)
+            button. Change the start (open) or end (close) time, then click "submit"
+            to save your changes. <br />
+            to delete a timeframe, click the timeframe's "delete" (<i class='material-icons inline'>delete</i>)
+            button.<br />
+          </p>
+          <hr />
+          <h5>Holidays</h5>
+          <p>
+            To view a merchant's holidays that they are closed on, click the
+            "settings" (<i class='material-icons inline'>settings</i>) drop down
+            and select "holidays". This page shows the current set of dates the
+            merchant is closed on. <br />
+            To add a holiday, click the "add" button. Enter the name of the holiday
+            and select the date, then click "submit" to save your changes.<br />
+            To delete a holiday, click the holiday's "delete" (<i class='material-icons inline'>delete</i>)
+            button.
+          </p>
+          <hr />
+          <h5>Stripe</h5>
+          <p>
+            To view a merchant's Stripe settings, click the "settings" (<i class='material-icons inline'>settings</i>)
+            drop down and select "Stripe".
+            <!--TODO: Brennan, can you explain this section more than I can?-->
           </p>
         </section>
 
@@ -924,17 +889,27 @@
             hierarchy of data points, each with a parent. The hierarchy looks
             like this:
             <pre>
-<code>Merchant > Menus > Categories > Items > Subcategories > Subitems</code>
+<code>
+Merchant
+ | Menus
+ | | Categories
+ | | | Items
+ | | | | Subcategories
+ | | | | | Subitems
+ | | | | Sizes
+ | | | | Options
+</code>
             </pre>
           </p>
           <hr />
           <h5>The Menus</h5>
           <p>
             <!--TODO: Add links to categories, items, subcats, and subitems-->
-            Menus contain all of the categories, items, subcategories, and subitems
-            available from a merchant. In addition to those items, they also
-            have specific characteristics, including the timeframe the menu is
-            served and the menu's name and description.
+            Menus contain all of the categories, items, subcategories, subitems,
+            item options, and item sizes available from a merchant. In addition
+            to those items, they also have specific characteristics, including
+            the timeframe the menu is served and the menu's name, description,
+            status, and type (wholesale or not).
           </p>
           <hr />
           <h5 id='md_menu_editor'>Menu Editor</h5>
@@ -943,8 +918,8 @@
             button, then 'menus'. Click the 'edit' (<i class='material-icons inline'>mode_edit</i>)
             button in the row of the menu you want to edit. <br />
             In the menu editor, you can change the menu's name and description,
-            bring up the serving time editor, delete serving times, and edit other
-            menu options.
+            bring up the serving time editor, delete serving times, manage the
+            status and menu options.
           </p>
           <hr />
           <h5>Serving Times</h5>
@@ -975,6 +950,24 @@
             </span>
           </div>
           <hr />
+          <h5>Changing Menu Status</h5>
+          <p>
+            A menu's status determines whether to show the menu or not. The
+            default status of "published" will show the menu to the customer,
+            while a status of "unpublished" will not.
+          </p>
+          <hr />
+          <h5>Catering and Wholesale</h5>
+          <p>
+            When building a catering menu, select the "catering" option. This
+            will inform the courier company that the items will be larger and
+            require different equipment than when an order is placed from a
+            regular menu.<br />
+            Setting a menu as wholesale will limit the menu's display to partnered
+            wholesale clients. Similarly to a catering menu, orders placed from
+            a wholesale menu will also inform the courier company that the items
+            will be larger and require special equipment to transport the items.
+          </p>
           <h5>Duplicating a Menu</h5>
           <p>
             To create a new menu with the same settings, click the 'duplicate' (<i class='material-icons inline'>content_copy</i>)
@@ -1071,16 +1064,21 @@
           <p>
             To edit an item, click the item's "edit" (<i class='material-icons inline'>mode_edit</i>)
             button. In the item editor, menu and category assignment can be
-            changed, the name and description can be edited, a new photo can
-            be uploaded, the item's photo can be deleted, the default price can
-            be changed, and the item's sizes can be viewed, selected for editing,
-            or deleted.<br />
+            changed, the item's publishing status can be updated, the name and
+            description can be edited, a new photo can be uploaded, the item's
+            photo can be deleted, the default price can be changed, and the
+            item's sizes can be viewed, selected for editing or deleted.<br />
             The item editor enables subcategories to be assigned to items. To
             assign a subcategory to an item, click the checkbox next to the
             subcategory name to be assigned. <br />
             To delete the item, click "delete item" at the bottom of the item
             editor. Deleting an item will not delete it's subcategories or subitems,
-            just the association.
+            just the association.<br />
+            Changing the status of an item from "published" to "unpublished" will
+            hide it from the menu's view without deleting the item. This toggle
+            is useful when a merchant temporarily goes out of stock on an item
+            and won't be able to continue to fulfill orders for this item. Once
+            the item returns to stock, the status can be updated to "published".
           </p>
           <hr />
           <h5>Duplicating an Item</h5>
@@ -1089,6 +1087,15 @@
             the items view. This will trigger the item editor with prefilled
             input values, including the item name, options, description, price,
             and subcategory assignment. The name must be changed before submitting.
+          </p>
+          <hr />
+          <h5>Assigning Options</h5>
+          <p>
+            To assign item options, click the "options" (<i class='material-icons inline'>settings</i>)
+            button in the items view. This will trigger the options editor. To
+            assign a specific option to an item, click the checkbox next to the
+            option name, then click "submit". To create options, see
+            <a href='#md_item_options'>creating options</a>.
           </p>
           <hr />
           <h5>Item Sizes</h5>
@@ -1104,6 +1111,24 @@
             <strong>To delete an item size</strong>, open the item's editor and
             scroll to the bottom. Each size will have a "delete" button next to
             it. Click that button to delete that size.
+          </p>
+        </section>
+
+        <section id='md_item_options' data-title="Merchant Dashboard: Menu Item Options">
+          <h4 class='section-header'>Menu Item Options</h4>
+          <p>
+            Item Options allow customers to add item-specific options to their
+            cart. Options can include free and priced additions. Common values
+            for options include things like ingredient removal, specialized
+            dietary option offerings, or portion doubling.<br />
+            To create a new option, click "Item Options" in the "menus" dropdown.
+            In the lower-right hand portion of the screen, click the "add" button.
+            Fill out the the option name and price, then click "submit".<br />
+            To edit an existing option, click the option's "edit" (<i class='material-icons inline'>mode_edit</i>)
+            button to trigger the option editor. The name and price are now
+            displayed and editable. Click "submit" to save your changes.<br />
+            To delete an existing option, click the option's "delete" (<i class='material-icons inline'>delete</i>)
+            button.
           </p>
         </section>
 
